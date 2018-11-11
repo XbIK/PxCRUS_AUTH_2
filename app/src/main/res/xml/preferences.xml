@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferenceScreen">
+
+    <PreferenceCategory
+        android:key="pref_key_cust"
+        android:title="Уровень скидок">
+
+        <ListPreference
+            android:defaultValue="0"
+
+            android:dialogTitle="Выберите уровень скидок"
+            android:entries="@array/discount"
+            android:entryValues="@array/values"
+            android:icon="@drawable/ic_business_center_black_24dp"
+            android:key="customer_type"
+            android:summary="скидки: %s" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_currency"
+        android:title="Валюта прайса"
+
+        >
+
+        <SwitchPreference
+            android:icon="@drawable/ic_euro_symbol_black_24dp"
+            android:key="currency_rate_pref"
+            android:summaryOff="цены в евро"
+            android:summaryOn="цены в рублях"
+            android:switchTextOff="евро"
+            android:switchTextOn="рубль" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="update_euro"
+            android:disableDependentsState="true"
+            android:summary="обновлять курс евро онлайн"
+            android:switchTextOff="off"
+            android:switchTextOn="on" />
+
+        <com.gmail.xbikan.pxcrus.EditTextPreference
+            android:defaultValue="68"
+            android:dependency="update_euro"
+            android:dialogTitle="курс евро:"
+            android:inputType="numberDecimal"
+            android:key="currency_rate_number"
+            android:selectAllOnFocus="true"
+            android:summary="курс евро: %s ₽" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="web"
+        android:title="Обновлять информацию с сайта">
+        <SwitchPreference
+            android:icon="@drawable/ic_vpn_lock_black_24dp"
+            android:key="connection_web"
+            android:summaryOff="соединение отключено"
+            android:summaryOn="соединение включено"
+            android:switchTextOff="off"
+            android:defaultValue="true"
+            android:switchTextOn="on" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="history_category"
+        android:title="Поиск">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_search_grey_24dp"
+            android:key="pref_save_histoy"
+            android:summary="сохранять историю поиска"
+            android:switchTextOff="off"
+            android:switchTextOn="on" />
+
+        <Preference
+            android:enabled="true"
+            android:key="pref_delete_history"
+            android:selectable="true"
+            android:summary="очистить историю поиска" >
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="auth_category"
+        android:title="Авторизация">
+
+        <Preference
+            android:enabled="true"
+            android:icon="@drawable/ic_account_for_preference_24dp"
+            android:key="user_name"
+            android:selectable="true"
+            android:summary="anything_you_want" >
+        </Preference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="check_pass_login"
+            android:summary="запомнить меня"
+            android:switchTextOff="off"
+            android:switchTextOn="on" />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

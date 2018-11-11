@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/articulText"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="8dp"
+        android:lines="1"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:text="Item articul and name"
+        android:textSize="15sp"
+        tool:layout_constraintEnd_toStartOf="@+id/imageButton"
+        tool:layout_constraintStart_toStartOf="parent"
+        tool:layout_constraintTop_toTopOf="parent"
+        tools:text="3022276 CLIPFIX 35-5" />
+
+    <TextView
+
+        android:id="@+id/itemPrice"
+        android:layout_width="256dp"
+        android:layout_height="20dp"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        tool:layout_constraintStart_toStartOf="@+id/articulText"
+        tool:layout_constraintTop_toBottomOf="@+id/articulText"
+        tools:text="BE4 | 56.2руб | 45% | 35.6 руб" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@color/colorPrimary"
+        android:tint="@android:color/darker_gray"
+        android:visibility="visible"
+        tool:layout_constraintEnd_toEndOf="parent"
+        tool:layout_constraintStart_toEndOf="@+id/articulText"
+        tool:layout_constraintTop_toTopOf="parent"
+        tool:srcCompat="@android:drawable/ic_dialog_info" />
+
+</android.support.constraint.ConstraintLayout>

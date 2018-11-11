@@ -1,0 +1,13 @@
+
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>euro_rubble</key>
+        <value>99</value>
+    </entry>
+    <entry>
+        <key>rate_fixed</key>
+        <value>false</value>
+    </entry>
+</defaultsMap>
+    <!-- END xml_defaults -->
