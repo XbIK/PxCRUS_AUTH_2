@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "976948570678",
+    "firebase_url": "https://pxcrusauth.firebaseio.com",
+    "project_id": "pxcrusauth",
+    "storage_bucket": "pxcrusauth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976948570678:android:aaf53763a48473ea",
+        "android_client_info": {
+          "package_name": "com.gmail.xbikan.pxcrus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976948570678-gchv123vpdofd8hu20s6tasucle0g225.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmail.xbikan.pxcrus",
+            "certificate_hash": "e99573814c51570b702b21d9d4f4ef9b9e26bdd8"
+          }
+        },
+        {
+          "client_id": "976948570678-61lcj9sqdq5jb9bnu8qb7rrvqgt2jc0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzjfRyDnDFXx4bYqhYoRcf0AqVwY0xBm0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976948570678-61lcj9sqdq5jb9bnu8qb7rrvqgt2jc0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

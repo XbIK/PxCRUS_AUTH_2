@@ -19,7 +19,7 @@ import static com.gmail.xbikan.pxcrus.ConstantsPxC.DB_NAME;
 
 public class DataBaseHelper extends SQLiteOpenHelper {
     private static String DB_PATH = "";
-    private static final int DB_VERSION = 33;
+    private static final int DB_VERSION = 34;
     private static final String DB_NAME = "2019_SM.sqlite";
 
     private SQLiteDatabase mDataBase;
