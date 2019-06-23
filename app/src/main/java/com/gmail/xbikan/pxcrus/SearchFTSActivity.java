@@ -206,6 +206,7 @@ public class SearchFTSActivity extends AppCompatActivity implements SharedPrefer
 
             @Override
             public void onError(@NonNull Throwable throwable) {
+                Log.v("Test", throwable.getMessage());
                 Toast.makeText(getApplicationContext(), "не удалось обновить курс евро", Toast.LENGTH_LONG).show();
 
                 //get the last successful CBRF rate

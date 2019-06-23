@@ -26,7 +26,7 @@ public class RequestGenerator {
 
         String dynamicLink = "XML_daily.asp?date_req=" + date;
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://www.cbr.ru/scripts/")
+                .baseUrl("https://www.cbr.ru/scripts/")
                 .client(new OkHttpClient())
                 .addConverterFactory(SimpleXmlConverterFactory.create())
                 .build();
